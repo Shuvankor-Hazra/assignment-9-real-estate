@@ -1,13 +1,23 @@
 import { Link, NavLink } from "react-router-dom";
 import userDefaultPic from "../../../assets/user.png"
+import { useContext } from "react";
+import { AuthContext } from "../../../providers/AuthProvider";
 
 
 const Navbar = () => {
 
+    const { user, logOut } = useContext(AuthContext);
+
+    const handleSIgnOut = () => {
+        logOut()
+            .then()
+            .catch()
+    }
+
     const navLinks = <>
-        <li className="text-[#fda40b] p-2 rounded-lg"><NavLink to="/">Home</NavLink></li>
-        <li className=" p-2 rounded-lg"><NavLink to="/about">About</NavLink></li>
-        <li className=" p-2 rounded-lg"><NavLink to="/updateProfile">Update Profile</NavLink></li>
+        <li className="p-2 rounded-lg "><NavLink to="/">Home</NavLink></li>
+        <li className="p-2 rounded-lg "><NavLink to="/about">About</NavLink></li>
+        <li className="p-2 rounded-lg "><NavLink to="/updateProfile">Update Profile</NavLink></li>
     </>
 
     return (
@@ -33,7 +43,7 @@ const Navbar = () => {
                 <div className="dropdown dropdown-end">
                     <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
                         <div className="w-8 md:w-10 rounded-full">
-                            <img alt="Profile Image" src={userDefaultPic} />
+                            <img alt="Profile" src={userDefaultPic} />
                         </div>
                     </div>
                     <ul tabIndex={0} className="mt-3 z-[10] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
@@ -42,8 +52,12 @@ const Navbar = () => {
                         <li><a>Logout</a></li>
                     </ul>
                 </div>
+                {
+                    user ?
+                        <Link onClick={handleSIgnOut} className="btn btn-sm md:btn-md bg-[#fda40b] text-white md:px-10 md:text-lg md:font-bold">Log Out</Link> :
+                        <Link to="/login" className="btn btn-sm md:btn-md bg-[#fda40b] text-white md:px-10 md:text-lg md:font-bold">Log In</Link>
+                }
 
-                <Link to="/login" className="btn btn-sm md:btn-md bg-[#fda40b] text-white md:px-10 md:text-lg md:font-bold">Login</Link>
             </div>
         </div>
     );

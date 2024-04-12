@@ -1,0 +1,146 @@
+[
+    {
+        "id": 1,
+        "estate_title": "Warehouse with Loading Docks",
+        "segment_name": "Industrial",
+        "description": "Spacious warehouse facility with multiple loading docks for efficient logistics operations.",
+        "price": "$10,000/month",
+        "status": "rent",
+        "area": "5000 sq ft",
+        "location": "Industrial Park, Logisticsville",
+        "facilities": [
+            "Loading Docks",
+            "Warehouse Office",
+            "Security System"
+        ],
+        "image": "https://i.ibb.co/r5889cS/real-es1.jpg"
+    },
+    {
+        "id": 2,
+        "estate_title": "Manufacturing Facility with Production Lines",
+        "segment_name": "Industrial",
+        "description": "State-of-the-art manufacturing facility equipped with advanced production lines and ample space for operations.",
+        "price": "$5,000,000",
+        "status": "sale",
+        "area": "20000 sq ft",
+        "location": "Manufacturing District, Industrial City",
+        "facilities": [
+            "Production Lines",
+            "Warehouse Space",
+            "Employee Break Area"
+        ],
+        "image": "https://i.ibb.co/LgqYTbY/real-es2.jpg"
+    },
+    {
+        "id": 3,
+        "estate_title": "Distribution Center with High Ceilings",
+        "segment_name": "Industrial",
+        "description": "Large distribution center featuring high ceilings and customizable layout for storage and distribution needs.",
+        "price": "$8,000/month",
+        "status": "rent",
+        "area": "10000 sq ft",
+        "location": "Distribution Hub, Logistics City",
+        "facilities": [
+            "High Ceilings",
+            "Truck Docks",
+            "Forklift Access"
+        ],
+        "image": "https://i.ibb.co/7N66wC6/real-es3.jpg"
+    },
+    {
+        "id": 4,
+        "estate_title": "Flex Space for Light Industrial Use",
+        "segment_name": "Industrial",
+        "description": "Versatile flex space suitable for light industrial activities or warehouse storage. Easily adaptable to various business needs.",
+        "price": "$500,000",
+        "status": "sale",
+        "area": "3000 sq ft",
+        "location": "Industrial Zone, Commercial District",
+        "facilities": [
+            "Open Floor Plan",
+            "Roll-up Doors",
+            "Parking"
+        ],
+        "image": "https://i.ibb.co/9h6yj2v/real-es4.jpg"
+    },
+    {
+        "id": 5,
+        "estate_title": "Cold Storage Facility for Perishable Goods",
+        "segment_name": "Industrial",
+        "description": "Specialized cold storage facility equipped with temperature-controlled units for storing perishable goods.",
+        "price": "$15,000/month",
+        "status": "rent",
+        "area": "15000 sq ft",
+        "location": "Cold Storage Zone, Refrigeration City",
+        "facilities": [
+            "Temperature Control",
+            "Loading Bays",
+            "Freezer Units"
+        ],
+        "image": "https://i.ibb.co/G5vW8x5/real-es5.jpg"
+    },
+    {
+        "id": 6,
+        "estate_title": "Industrial Park with Office Spaces",
+        "segment_name": "Industrial",
+        "description": "Comprehensive industrial park offering a mix of warehouse, manufacturing, and office spaces for businesses of all sizes.",
+        "price": "$20,000,000",
+        "status": "sale",
+        "area": "500000 sq ft",
+        "location": "Industrial Complex, Business District",
+        "facilities": [
+            "Office Spaces",
+            "Conference Rooms",
+            "Cafeteria"
+        ],
+        "image": "https://i.ibb.co/dGN59mK/real-es6.jpg"
+    },
+    {
+        "id": 7,
+        "estate_title": "Heavy Machinery Yard with Storage Facilities",
+        "segment_name": "Industrial",
+        "description": "Yard space suitable for storing heavy machinery and equipment, with additional storage facilities for materials and supplies.",
+        "price": "$2,000,000",
+        "status": "sale",
+        "area": "100000 sq ft",
+        "location": "Machinery Zone, Industrial Hub",
+        "facilities": [
+            "Outdoor Storage",
+            "Covered Shelters",
+            "Security Fence"
+        ],
+        "image": "https://i.ibb.co/ScVWHRj/real-es7.jpg"
+    },
+    {
+        "id": 8,
+        "estate_title": "Industrial Workshop with Workshop Bays",
+        "segment_name": "Industrial",
+        "description": "Fully equipped industrial workshop featuring multiple workshop bays and utilities for manufacturing or repair operations.",
+        "price": "$7,500/month",
+        "status": "rent",
+        "area": "5000 sq ft",
+        "location": "Workshop District, Industrial Center",
+        "facilities": [
+            "Workshop Bays",
+            "Utility Connections",
+            "Storage Room"
+        ],
+        "image": "https://i.ibb.co/zmzgfNJ/real-es8.jpg"
+    },
+    {
+        "id": 9,
+        "estate_title": "High-Tech Research Facility with Lab Spaces",
+        "segment_name": "Industrial",
+        "description": "Cutting-edge research facility equipped with specialized lab spaces and advanced technology infrastructure for scientific research.",
+        "price": "$30,000/month",
+        "status": "rent",
+        "area": "20000 sq ft",
+        "location": "Research Campus, Innovation City",
+        "facilities": [
+            "Lab Spaces",
+            "Research Equipment",
+            "Meeting Rooms"
+        ],
+        "image": "https://i.ibb.co/f4M38XC/real-es9.jpg"
+    }
+]

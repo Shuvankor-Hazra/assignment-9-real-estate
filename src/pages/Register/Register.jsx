@@ -1,17 +1,30 @@
 
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../providers/AuthProvider";
 
 
 const Register = () => {
 
+    const { createUser } = useContext(AuthContext)
+
     const handleRegister = (e) => {
         e.preventDefault();
 
-        const name = e.target.name.value;
-        const email = e.target.email.value;
-        const password = e.target.password.value;
-        const conformPassword = e.target.conformPassword.value;
-        console.log(name, email, password, conformPassword);
+        const form = new FormData(e.currentTarget);
+        const name = form.get('name')
+        const email = form.get('email');
+        const photoUrl = form.get('photoUrl');
+        const password = form.get('password');
+        console.log(name, email, photoUrl, password);
+
+        createUser(email, password)
+            .then((result) => {
+                console.log(result);
+            })
+            .catch((error) => {
+                console.error(error)
+            })
 
 
 
@@ -55,7 +68,7 @@ const Register = () => {
                                 <span className="label-text">Photo URL</span>
                             </label>
                             <input
-                                name="PhotoUrl"
+                                name="photoUrl"
                                 type="text"
                                 placeholder="Photo URL"
                                 className="input input-bordered"

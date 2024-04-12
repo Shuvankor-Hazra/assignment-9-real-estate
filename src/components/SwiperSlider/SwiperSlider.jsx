@@ -11,7 +11,7 @@ import slider3 from '../../assets/3.jpg'
 
 const SwiperSlider = () => {
     return (
-        <Swiper 
+        <Swiper
             modules={[Parallax, Autoplay, Navigation, Pagination, Scrollbar, EffectCube]}
             data-swiper-parallax="-23%"
             slot="container-start"
@@ -26,7 +26,7 @@ const SwiperSlider = () => {
             pagination={{ clickable: true }}
             scrollbar={{ draggable: true }}
             effect={'cube'}
-            grabCursor={true}
+            // grabCursor={true}
             cubeEffect={{
                 shadow: true,
                 slideShadows: true,
@@ -36,51 +36,64 @@ const SwiperSlider = () => {
         >
             <SwiperSlide>
                 <div
-                    className="parallax-bg bg-no-repeat bg-center bg-cover h-dvh rounded-3xl text-white"
+                    className="mx-2 md:mx-0 bg-no-repeat bg-center bg-cover h-dvh rounded-3xl text-white"
                     style={{
                         backgroundImage: `url(${slider1})`,
                         opacity: .8
                     }}
                 >
-                    <div className='w-5/6 h-full flex flex-col justify-center mx-auto gap-5 bg-transparent'
+                    <div className='w-5/6 h-full flex flex-col justify-center mx-auto space-y-5'
                     >
-                        <h2 className='font-bold md:text-5xl' data-swiper-parallax="-100">This is Slide 1</h2>
-                        <h2 className='font-bold md:text-3xl' data-swiper-parallax="-300">Slide title: Lorem ipsum dolor sit amet consectetur adipisicing elit perferendis dignissimos consequuntur fugit asperiores deserunt?</h2>
-                        <h2 className='font-bold md:text-2xl' data-swiper-parallax="-500">Slide title: Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde suscipit in sequi minima reprehenderit facilis expedita! Repudiandae maxime nostrum error, blanditiis quaerat voluptatem autem, perferendis dignissimos consequuntur fugit asperiores deserunt?</h2>
+                        <div className='space-y-5 w-3/4 leading-7'>
+                            <h2 className='font-extrabold md:text-5xl' data-swiper-parallax="-100">This SlideThis is SlideSlide This</h2>
+                            <h2 className='font-semibold md:text-lg' data-swiper-parallax="-300">Slide title: Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde suscipit in sequi minima reprehenderit facilis expedita! Repudiandae maxime nostrum error, blanditiis quaerat voluptatem autem, perferendis dignissimos consequuntur fugit asperiores deserunt?</h2>
+                        </div>
+                        <div className='space-x-6 '>
+                        <button data-swiper-parallax="-500" className='btn font-semibold bg-[#fda40b] w-fit px-12 text-white'>Learn More</button>
+                        <button data-swiper-parallax="-500" className='btn font-semibold bg-white w-fit px-12 text-[#fda40b]'>Learn More</button>
+                        </div>
                     </div>
                 </div>
             </SwiperSlide>
             <SwiperSlide>
                 <div
-                    slot="container-start"
-                    className="parallax-bg bg-no-repeat bg-center bg-cover h-dvh rounded-3xl text-white"
+                    className="mx-2 md:mx-0 bg-no-repeat bg-center bg-cover h-dvh rounded-3xl text-white"
                     style={{
                         backgroundImage: `url(${slider2})`,
                         opacity: .8
                     }}
                 >
-                    <div className='w-5/6 h-full flex flex-col justify-center mx-auto gap-5'
+                    <div className='w-5/6 h-full flex flex-col justify-center mx-auto space-y-5'
                     >
-                        <h2 className='font-bold md:text-5xl' data-swiper-parallax="-100">This is Slide 1</h2>
-                        <h2 className='font-bold md:text-3xl' data-swiper-parallax="-300">Slide title: Lorem ipsum dolor sit amet consectetur adipisicing elit perferendis dignissimos consequuntur fugit asperiores deserunt?</h2>
-                        <h2 className='font-bold md:text-2xl' data-swiper-parallax="-500">Slide title: Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde suscipit in sequi minima reprehenderit facilis expedita! Repudiandae maxime nostrum error, blanditiis quaerat voluptatem autem, perferendis dignissimos consequuntur fugit asperiores deserunt?</h2>
+                        <div className='space-y-5 w-3/4 leading-7'>
+                            <h2 className='font-extrabold md:text-5xl' data-swiper-parallax="-100">This SlideThis is SlideSlide This</h2>
+                            <h2 className='font-semibold md:text-lg' data-swiper-parallax="-300">Slide title: Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde suscipit in sequi minima reprehenderit facilis expedita! Repudiandae maxime nostrum error, blanditiis quaerat voluptatem autem, perferendis dignissimos consequuntur fugit asperiores deserunt?</h2>
+                        </div>
+                        <div className='space-x-6 '>
+                        <button data-swiper-parallax="-500" className='btn font-semibold bg-[#fda40b] w-fit px-12 text-white'>Learn More</button>
+                        <button data-swiper-parallax="-500" className='btn font-semibold bg-white w-fit px-12 text-[#fda40b]'>Learn More</button>
+                        </div>
                     </div>
                 </div>
             </SwiperSlide>
             <SwiperSlide>
                 <div
-                    slot="container-start"
-                    className="parallax-bg bg-no-repeat bg-center bg-cover h-dvh rounded-3xl text-white"
+                    className="mx-2 md:mx-0 bg-no-repeat bg-center bg-cover h-dvh rounded-3xl text-white"
                     style={{
                         backgroundImage: `url(${slider3})`,
                         opacity: .8
                     }}
                 >
-                    <div className='w-5/6 h-full flex flex-col justify-center mx-auto gap-5'
+                    <div className='w-5/6 h-full flex flex-col justify-center mx-auto space-y-5'
                     >
-                        <h2 className='font-bold md:text-5xl' data-swiper-parallax="-100">This is Slide 1</h2>
-                        <h2 className='font-bold md:text-3xl' data-swiper-parallax="-300">Slide title: Lorem ipsum dolor sit amet consectetur adipisicing elit perferendis dignissimos consequuntur fugit asperiores deserunt?</h2>
-                        <h2 className='font-bold md:text-2xl' data-swiper-parallax="-500">Slide title: Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde suscipit in sequi minima reprehenderit facilis expedita! Repudiandae maxime nostrum error, blanditiis quaerat voluptatem autem, perferendis dignissimos consequuntur fugit asperiores deserunt?</h2>
+                        <div className='space-y-5 w-3/4 leading-7'>
+                            <h2 className='font-extrabold md:text-5xl' data-swiper-parallax="-100">This SlideThis is SlideSlide This</h2>
+                            <h2 className='font-semibold md:text-lg' data-swiper-parallax="-300">Slide title: Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde suscipit in sequi minima reprehenderit facilis expedita! Repudiandae maxime nostrum error, blanditiis quaerat voluptatem autem, perferendis dignissimos consequuntur fugit asperiores deserunt?</h2>
+                        </div>
+                        <div className='space-x-6 '>
+                        <button data-swiper-parallax="-500" className='btn font-semibold bg-[#fda40b] w-fit px-12 text-white'>Learn More</button>
+                        <button data-swiper-parallax="-500" className='btn font-semibold bg-white w-fit px-12 text-[#fda40b]'>Learn More</button>
+                        </div>
                     </div>
                 </div>
             </SwiperSlide>
