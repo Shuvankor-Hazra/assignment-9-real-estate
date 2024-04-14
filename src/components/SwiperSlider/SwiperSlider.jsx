@@ -31,7 +31,6 @@ const SwiperSlider = () => {
                 shadow: true,
                 slideShadows: true,
                 shadowOffset: 20,
-                shadowScale: 0.94,
             }}
         >
             <SwiperSlide>
@@ -42,15 +41,15 @@ const SwiperSlider = () => {
                         opacity: .8
                     }}
                 >
-                    <div className='w-5/6 h-full flex flex-col justify-center mx-auto space-y-5'
+                    <div className='md:w-5/6 h-full flex flex-col justify-center mx-auto md:space-y-5 px-10'
                     >
-                        <div className='space-y-5 w-3/4 leading-7'>
-                            <h2 className='font-extrabold md:text-5xl' data-swiper-parallax="-100">This SlideThis is SlideSlide This</h2>
-                            <h2 className='font-semibold md:text-lg' data-swiper-parallax="-300">Slide title: Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde suscipit in sequi minima reprehenderit facilis expedita! Repudiandae maxime nostrum error, blanditiis quaerat voluptatem autem, perferendis dignissimos consequuntur fugit asperiores deserunt?</h2>
+                        <div className='md:space-y-5 md:w-3/4 leading-7 '>
+                            <h2 className='font-extrabold text-2xl md:text-5xl' data-swiper-parallax="-100">Welcome to BricksValley</h2>
+                            <h2 className='font-semibold md:text-xl' data-swiper-parallax="-300">Rising demand fuels industrial real estate growth, driven by logistics innovation and manufacturing expansion.</h2>
                         </div>
                         <div className='space-x-6 '>
-                        <button data-swiper-parallax="-500" className='btn font-semibold bg-[#fda40b] w-fit px-12 text-white'>Learn More</button>
-                        <button data-swiper-parallax="-500" className='btn font-semibold bg-white w-fit px-12 text-[#fda40b]'>Learn More</button>
+                            <button data-swiper-parallax="-500" className='btn btn-sm md:btn-md md:font-semibold bg-white w-fit md:px-12 text-[#fda40b]'>About Us</button>
+                            <button data-swiper-parallax="-500" className='btn btn-sm md:btn-md md:font-semibold bg-[#fda40b] w-fit md:px-12 text-white'>Learn More</button>
                         </div>
                     </div>
                 </div>
@@ -63,15 +62,15 @@ const SwiperSlider = () => {
                         opacity: .8
                     }}
                 >
-                    <div className='w-5/6 h-full flex flex-col justify-center mx-auto space-y-5'
+                    <div className='md:w-5/6 h-full flex flex-col justify-center mx-auto md:space-y-5 px-10'
                     >
-                        <div className='space-y-5 w-3/4 leading-7'>
-                            <h2 className='font-extrabold md:text-5xl' data-swiper-parallax="-100">This SlideThis is SlideSlide This</h2>
-                            <h2 className='font-semibold md:text-lg' data-swiper-parallax="-300">Slide title: Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde suscipit in sequi minima reprehenderit facilis expedita! Repudiandae maxime nostrum error, blanditiis quaerat voluptatem autem, perferendis dignissimos consequuntur fugit asperiores deserunt?</h2>
+                        <div className='md:space-y-5 md:w-3/4 leading-7 '>
+                            <h2 className='font-extrabold text-2xl md:text-5xl' data-swiper-parallax="-100">Welcome to BricksValley</h2>
+                            <h2 className='font-semibold md:text-xl' data-swiper-parallax="-300">Rising demand fuels industrial real estate growth, driven by logistics innovation and manufacturing expansion.</h2>
                         </div>
                         <div className='space-x-6 '>
-                        <button data-swiper-parallax="-500" className='btn font-semibold bg-[#fda40b] w-fit px-12 text-white'>Learn More</button>
-                        <button data-swiper-parallax="-500" className='btn font-semibold bg-white w-fit px-12 text-[#fda40b]'>Learn More</button>
+                            <button data-swiper-parallax="-500" className='btn btn-sm md:btn-md md:font-semibold bg-white w-fit md:px-12 text-[#fda40b]'>About Us</button>
+                            <button data-swiper-parallax="-500" className='btn btn-sm md:btn-md md:font-semibold bg-[#fda40b] w-fit md:px-12 text-white'>Learn More</button>
                         </div>
                     </div>
                 </div>
@@ -84,19 +83,21 @@ const SwiperSlider = () => {
                         opacity: .8
                     }}
                 >
-                    <div className='w-5/6 h-full flex flex-col justify-center mx-auto space-y-5'
+                    <div className='md:w-5/6 h-full flex flex-col justify-center mx-auto md:space-y-5 px-10'
                     >
-                        <div className='space-y-5 w-3/4 leading-7'>
-                            <h2 className='font-extrabold md:text-5xl' data-swiper-parallax="-100">This SlideThis is SlideSlide This</h2>
-                            <h2 className='font-semibold md:text-lg' data-swiper-parallax="-300">Slide title: Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde suscipit in sequi minima reprehenderit facilis expedita! Repudiandae maxime nostrum error, blanditiis quaerat voluptatem autem, perferendis dignissimos consequuntur fugit asperiores deserunt?</h2>
+                        <div className='md:space-y-5 md:w-3/4 leading-7 '>
+                            <h2 className='font-extrabold text-2xl md:text-5xl' data-swiper-parallax="-100">Welcome to BricksValley</h2>
+                            <h2 className='font-semibold md:text-xl' data-swiper-parallax="-300">Rising demand fuels industrial real estate growth, driven by logistics innovation and manufacturing expansion.</h2>
                         </div>
                         <div className='space-x-6 '>
-                        <button data-swiper-parallax="-500" className='btn font-semibold bg-[#fda40b] w-fit px-12 text-white'>Learn More</button>
-                        <button data-swiper-parallax="-500" className='btn font-semibold bg-white w-fit px-12 text-[#fda40b]'>Learn More</button>
+                            <button data-swiper-parallax="-500" className='btn btn-sm md:btn-md md:font-semibold bg-white w-fit md:px-12 text-[#fda40b]'>About Us</button>
+                            <button data-swiper-parallax="-500" className='btn btn-sm md:btn-md md:font-semibold bg-[#fda40b] w-fit md:px-12 text-white'>Learn More</button>
                         </div>
                     </div>
                 </div>
             </SwiperSlide>
+ 
+
         </Swiper>
     );
 };

@@ -6,6 +6,7 @@ import Login from "../pages/Login/Login";
 import Register from "../pages/Register/Register";
 import About from "../pages/About/About";
 import PropertyDetails from "../pages/PropertyDetails/PropertyDetails";
+import UpdateProfile from "../pages/UpdateProfile/UpdateProfile";
 
 const router = createBrowserRouter([
     {
@@ -16,7 +17,6 @@ const router = createBrowserRouter([
             {
                 path: "/",
                 element: <Home></Home>,
-                loader: () => fetch('../../public/realEstates.json')
             },
             {
                 path: "/propertyDetails/:id",
@@ -28,7 +28,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "/updateProfile",
-                element: <Home></Home>
+                element: <UpdateProfile></UpdateProfile>
             },
             {
                 path: "/login",

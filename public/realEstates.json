@@ -5,9 +5,9 @@
         "segment_name": "Industrial",
         "description": "Spacious warehouse facility with multiple loading docks for efficient logistics operations.",
         "price": "$10,000/month",
-        "status": "rent",
+        "status": "Rent",
         "area": "5000 sq ft",
-        "location": "Industrial Park, Logisticsville",
+        "location": "Industrial Park, Logistics Villa",
         "facilities": [
             "Loading Docks",
             "Warehouse Office",
@@ -21,7 +21,7 @@
         "segment_name": "Industrial",
         "description": "State-of-the-art manufacturing facility equipped with advanced production lines and ample space for operations.",
         "price": "$5,000,000",
-        "status": "sale",
+        "status": "Sale",
         "area": "20000 sq ft",
         "location": "Manufacturing District, Industrial City",
         "facilities": [
@@ -37,7 +37,7 @@
         "segment_name": "Industrial",
         "description": "Large distribution center featuring high ceilings and customizable layout for storage and distribution needs.",
         "price": "$8,000/month",
-        "status": "rent",
+        "status": "Rent",
         "area": "10000 sq ft",
         "location": "Distribution Hub, Logistics City",
         "facilities": [
@@ -53,7 +53,7 @@
         "segment_name": "Industrial",
         "description": "Versatile flex space suitable for light industrial activities or warehouse storage. Easily adaptable to various business needs.",
         "price": "$500,000",
-        "status": "sale",
+        "status": "Sale",
         "area": "3000 sq ft",
         "location": "Industrial Zone, Commercial District",
         "facilities": [
@@ -69,7 +69,7 @@
         "segment_name": "Industrial",
         "description": "Specialized cold storage facility equipped with temperature-controlled units for storing perishable goods.",
         "price": "$15,000/month",
-        "status": "rent",
+        "status": "Rent",
         "area": "15000 sq ft",
         "location": "Cold Storage Zone, Refrigeration City",
         "facilities": [
@@ -85,7 +85,7 @@
         "segment_name": "Industrial",
         "description": "Comprehensive industrial park offering a mix of warehouse, manufacturing, and office spaces for businesses of all sizes.",
         "price": "$20,000,000",
-        "status": "sale",
+        "status": "Sale",
         "area": "500000 sq ft",
         "location": "Industrial Complex, Business District",
         "facilities": [
@@ -101,7 +101,7 @@
         "segment_name": "Industrial",
         "description": "Yard space suitable for storing heavy machinery and equipment, with additional storage facilities for materials and supplies.",
         "price": "$2,000,000",
-        "status": "sale",
+        "status": "Sale",
         "area": "100000 sq ft",
         "location": "Machinery Zone, Industrial Hub",
         "facilities": [
@@ -117,7 +117,7 @@
         "segment_name": "Industrial",
         "description": "Fully equipped industrial workshop featuring multiple workshop bays and utilities for manufacturing or repair operations.",
         "price": "$7,500/month",
-        "status": "rent",
+        "status": "Rent",
         "area": "5000 sq ft",
         "location": "Workshop District, Industrial Center",
         "facilities": [
@@ -133,7 +133,7 @@
         "segment_name": "Industrial",
         "description": "Cutting-edge research facility equipped with specialized lab spaces and advanced technology infrastructure for scientific research.",
         "price": "$30,000/month",
-        "status": "rent",
+        "status": "Rent",
         "area": "20000 sq ft",
         "location": "Research Campus, Innovation City",
         "facilities": [

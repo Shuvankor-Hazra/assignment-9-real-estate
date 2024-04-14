@@ -14,8 +14,8 @@ const Estates = () => {
 
     return (
         <div className="text-center mt-10">
-            <span className="text-2xl font-bold text-[#fda40b]">Our Estates {estates.length}</span>
-            <h2 className="text-5xl font-bold py-6 uppercase">Visit our latest Estates</h2>
+            <span className="text-2xl font-bold text-[#fda40b]">Our Estates</span>
+            <h2 className="text-4xl font-bold py-6 uppercase">Visit our latest Estates</h2>
             <p className="md:w-1/2 mx-auto pb-6 text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem velit asperiores ratione, consequatur molestias pariatur.</p>
             <div className="grid lg:grid-cols-3 gap-6">
                 {
