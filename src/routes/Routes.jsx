@@ -7,6 +7,7 @@ import Register from "../pages/Register/Register";
 import About from "../pages/About/About";
 import PropertyDetails from "../pages/PropertyDetails/PropertyDetails";
 import UpdateProfile from "../pages/UpdateProfile/UpdateProfile";
+import PrivateRoutes from "./PrivateRoutes";
 
 const router = createBrowserRouter([
     {
@@ -29,7 +30,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "/updateProfile",
-                element: <UpdateProfile></UpdateProfile>
+                element: <PrivateRoutes><UpdateProfile></UpdateProfile></PrivateRoutes>
             },
             {
                 path: "/login",

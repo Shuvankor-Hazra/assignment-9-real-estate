@@ -26,15 +26,13 @@ const Register = () => {
                 console.error(error)
             })
 
-
-
     }
 
     return (
-        <div className="hero min-h-fit bg-base-200 p-10">
+        <div className="hero min-h-fit bg-base-200 md:p-10">
             <div className="hero-content flex-col lg:flex-row-reverse">
                 <div className="text-center lg:text-left">
-                    <h1 className="text-5xl font-bold">Register Here</h1>
+                    <h1 className="text-3xl md:text-5xl font-bold">Register Here</h1>
                     <p className="py-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim eaque sunt praesentium ab labore adipisci, laudantium rerum molestias voluptatibus, harum blanditiis quisquam!</p>
                 </div>
                 <div className="card shrink-0 w-full max-w-lg shadow-2xl bg-base-100">

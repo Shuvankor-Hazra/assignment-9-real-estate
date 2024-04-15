@@ -7,7 +7,7 @@
 .active{
     background-color: white;
     color: #fda40b;
-    border-top: 2px solid #fda40b;
-    border-bottom: 2px solid #fda40b;
+    border-top: 1px dashed #fda40b;
+    border-bottom: 1px dashed #fda40b;
     padding: 2px 0;
 }

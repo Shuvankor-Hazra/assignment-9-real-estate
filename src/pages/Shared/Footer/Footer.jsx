@@ -2,8 +2,8 @@
 
 const Footer = () => {
     return (
-        <div className="bg-base-300 ">
-            <footer className="footer p-10 text-base-content max-w-7xl mx-auto font-inter">
+        <div className="bg-black text-white">
+            <footer className="footer p-10 max-w-7xl mx-auto font-inter">
                 <nav>
                     <h6 className="footer-title">Services</h6>
                     <a className="link link-hover">Branding</a>
@@ -25,7 +25,7 @@ const Footer = () => {
                     <a className="link link-hover">Cookie policy</a>
                 </nav>
             </footer>
-            <footer className="footer px-10 py-4 border-t text-base-content border-base-300 max-w-7xl mx-auto font-inter">
+            <footer className="footer px-10 py-4 border-t border-base-300 max-w-7xl mx-auto font-inter">
                 <aside className="items-center grid-flow-col">
                     <p>ACME Industries Ltd. <br />Providing reliable tech since 1992</p>
                 </aside>
