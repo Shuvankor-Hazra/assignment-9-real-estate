@@ -1,31 +1,46 @@
-
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
+import toast, { Toaster } from 'react-hot-toast';
+import { IoIosEyeOff } from "react-icons/io";
+import { IoIosEye } from "react-icons/io";
 
 
 const Register = () => {
 
-    const { createUser } = useContext(AuthContext)
+    const [showPassword, setShowPassword] = useState(false);
+
+    const { createUser } = useContext(AuthContext);
 
     const handleRegister = (e) => {
         e.preventDefault();
-
         const form = new FormData(e.currentTarget);
-        const name = form.get('name')
+        const name = form.get('name');
         const email = form.get('email');
         const photoUrl = form.get('photoUrl');
         const password = form.get('password');
         console.log(name, email, photoUrl, password);
 
+        if (password.length < 6) {
+            toast.error('Password should be al least 6 character or longer')
+            return;
+        } else if (!/[A-Z]/.test(password)) {
+            toast.error('Password should be al least 1 Uppercase character')
+            return;
+        } else if (!/[a-z]/.test(password)) {
+            toast.error('Password should be al least 1 Lowercase character')
+            return;
+        }
+
         createUser(email, password)
             .then((result) => {
                 console.log(result);
+                toast.success('Registration completed successfully!')
             })
             .catch((error) => {
-                console.error(error)
+                console.error(error);
+                toast.error(error.message);
             })
-
     }
 
     return (
@@ -76,21 +91,25 @@ const Register = () => {
                         <div className="form-control">
                             <label className="label">
                                 <span className="label-text">Password</span>
+                                <span className="text-xl relative top-10 right-3 cursor-pointer"  onClick={() => setShowPassword(!showPassword)}>{showPassword ? <IoIosEye /> : <IoIosEyeOff />}</span>
                             </label>
                             <input
                                 name="password"
-                                type="password"
+                                type={showPassword ? "text" : "password"}
                                 placeholder="Password"
                                 className="input input-bordered"
                                 required />
                         </div>
 
-
                         <div className="form-control my-6">
-                            <button className="btn btn-primary">Register</button>
+                            <button className="btn bg-[#fda40b] text-white">Register</button>
                         </div>
                         <div className="text-center">
-                            <p>Already have an account? Please...<Link to="/login" className="text-primary underline font-bold">Login</Link></p>
+                            <p>Already have an account ? Please... <Link to="/login" className="text-[#fda40b] underline font-bold">Login</Link></p>
+                            <Toaster
+                                position="top-center"
+                                reverseOrder={true}
+                            />
                         </div>
                     </form>
                 </div>

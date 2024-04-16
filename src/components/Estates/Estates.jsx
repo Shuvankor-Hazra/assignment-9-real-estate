@@ -7,7 +7,7 @@ const Estates = () => {
     const [estates, setEstates] = useState([]);
 
     useEffect(() => {
-        fetch('../../../public/realEstates.json')
+        fetch('/realEstates.json')
             .then((res) => res.json())
             .then((data) => setEstates(data))
     }, [])

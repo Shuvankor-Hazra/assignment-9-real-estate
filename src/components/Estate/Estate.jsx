@@ -4,12 +4,17 @@ import { Link } from 'react-router-dom';
 
 const Estate = ({ estate }) => {
 
-    const { image, estate_title, id, price, area,status } = estate;
-    const [f1,f2,f3] = estate.facilities;
+    const { image, estate_title, id, price, area, status } = estate;
+    const [f1, f2, f3] = estate.facilities;
 
     return (
         <div>
-            <div className="border rounded-xl ">
+            <div
+                data-aos="zoom-out-down"
+                data-aos-easing="ease-in-sine"
+                data-aos-offset="300"
+                data-aos-duration="1000"
+                className="border rounded-xl">
                 <div className="px-6 pt-6">
                     <img src={image} className="rounded-xl " />
                     <span className='absolute -translate-y-[110%] -translate-x-[50%] text-xl font-bold bg-[#fda40b] text-white px-6 py-1 rounded'>{status}</span>
@@ -21,7 +26,7 @@ const Estate = ({ estate }) => {
                     </div>
                     <h2 className="py-3 font-bold ">{estate_title}</h2>
                     <h2 className="font-bold">Facilities: </h2>
-                    <div className='text-left list-disc ms-6'>
+                    <div className=' ms-6'>
                         <li className=''>{f1}</li>
                         <li className=''>{f2}</li>
                         <li className=''>{f3}</li>

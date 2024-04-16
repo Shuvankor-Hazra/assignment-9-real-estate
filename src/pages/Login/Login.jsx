@@ -1,8 +1,6 @@
-
 import { useContext } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
-
 
 const Login = () => {
 
@@ -17,7 +15,6 @@ const Login = () => {
         const form = new FormData(e.currentTarget);
         const email = form.get('email');
         const password = form.get('password');
-        console.log(email, password);
 
         signInUser(email, password)
             .then((result) => {
@@ -61,10 +58,10 @@ const Login = () => {
                                 required />
                         </div>
                         <div className="form-control my-6">
-                            <button className="btn btn-primary">Login</button>
+                            <button className="btn bg-[#fda40b] text-white">Login</button>
                         </div>
                         <div className="text-center">
-                            <p>New User? Please... <Link to="/register" className="text-primary underline font-bold">Registration</Link></p>
+                            <p>New User ? Please... <Link to="/register" className="text-[#fda40b] underline font-bold">Registration</Link></p>
                         </div>
                     </form>
                 </div>
