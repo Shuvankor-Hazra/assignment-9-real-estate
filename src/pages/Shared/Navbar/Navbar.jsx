@@ -1,5 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
-import userDefaultPic from "../../../assets/user.png"
+import userDefaultPic from "../../../assets/user.png";
 import { useContext } from "react";
 import { AuthContext } from "../../../providers/AuthProvider";
 
@@ -38,19 +38,14 @@ const Navbar = () => {
                     {navLinks}
                 </ul>
             </div>
-            <div className="navbar-end gap-3">
+            <div className="navbar-end gap-4">
 
                 <div className="dropdown dropdown-end">
-                    <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
-                        <div className="w-8 md:w-10 rounded-full">
-                            <img alt="Profile" src={userDefaultPic} />
+                    <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar tooltip" data-tip={user?.displayName || 'Name not found'}>
+                        <div className="w-10 md:w-12 rounded-full ">
+                            <img alt="Profile" src={user?.photoURL || userDefaultPic} />
                         </div>
                     </div>
-                    <ul tabIndex={0} className="mt-3 z-[10] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
-                        <li><a>Profile</a></li>
-                        <li><a>Settings</a></li>
-                        <li><a>Logout</a></li>
-                    </ul>
                 </div>
                 {
                     user ?

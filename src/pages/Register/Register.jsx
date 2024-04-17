@@ -1,16 +1,20 @@
-import { useContext, useState } from "react";
-import { Link } from "react-router-dom";
-import { AuthContext } from "../../providers/AuthProvider";
+import { Link, useNavigate } from "react-router-dom";
 import toast, { Toaster } from 'react-hot-toast';
 import { IoIosEyeOff } from "react-icons/io";
 import { IoIosEye } from "react-icons/io";
+import useAuth from "../../hooks/useAuth";
+import { useState } from "react";
 
 
 const Register = () => {
 
     const [showPassword, setShowPassword] = useState(false);
 
-    const { createUser } = useContext(AuthContext);
+    const { createUser, updateUserProfile } = useAuth();
+
+    const navigate = useNavigate();
+
+    const from = "/";
 
     const handleRegister = (e) => {
         e.preventDefault();
@@ -32,8 +36,12 @@ const Register = () => {
             return;
         }
 
-        createUser(email, password)
+        createUser(email, password, name, photoUrl)
             .then((result) => {
+                updateUserProfile(name, photoUrl)
+                    .then(() => {
+                        navigate(from);
+                    })
                 console.log(result);
                 toast.success('Registration completed successfully!')
             })
@@ -55,7 +63,7 @@ const Register = () => {
                         <div className="form-control">
                             <label className="label">
                                 <span className="label-text">Full Name</span>
-                            </label>
+                            </label>        
                             <input
                                 name="name"
                                 type="text"
@@ -91,7 +99,7 @@ const Register = () => {
                         <div className="form-control">
                             <label className="label">
                                 <span className="label-text">Password</span>
-                                <span className="text-xl relative top-10 right-3 cursor-pointer"  onClick={() => setShowPassword(!showPassword)}>{showPassword ? <IoIosEye /> : <IoIosEyeOff />}</span>
+                                <span className="text-xl relative top-10 right-3 cursor-pointer" onClick={() => setShowPassword(!showPassword)}>{showPassword ? <IoIosEye /> : <IoIosEyeOff />}</span>
                             </label>
                             <input
                                 name="password"

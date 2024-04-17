@@ -1,10 +1,12 @@
-import { useContext } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { AuthContext } from "../../providers/AuthProvider";
+import { AiOutlineLogin } from "react-icons/ai";
+import useAuth from "../../hooks/useAuth";
+import GoogleLogin from "./GoogleLogin";
+import GithubLogin from "./GithubLogin";
 
 const Login = () => {
 
-    const { signInUser } = useContext(AuthContext);
+    const { signInUser } = useAuth();
 
     const location = useLocation();
 
@@ -34,7 +36,7 @@ const Login = () => {
                     <p className="py-6">Lorem ipsum dolor sit amet consectetur adipisicing fuga, iure praesentium repellat tenetur a itaque laudantium rerum molestias voluptatibus, harum blanditiis quisquam!</p>
                 </div>
                 <div className="card shrink-0 w-full max-w-lg shadow-2xl bg-base-100">
-                    <form onSubmit={handleLogin} className="card-body">
+                    <form onSubmit={handleLogin} className="card-body pb-0">
                         <div className="form-control">
                             <label className="label">
                                 <span className="label-text">Email</span>
@@ -57,13 +59,17 @@ const Login = () => {
                                 className="input input-bordered"
                                 required />
                         </div>
-                        <div className="form-control my-6">
-                            <button className="btn bg-[#fda40b] text-white">Login</button>
+                        <div className="">
+                            <div className="form-control my-6">
+                                <button className="btn bg-[#fda40b] text-white"><AiOutlineLogin className="text-black text-2xl" />Login</button>
+                            </div>
                         </div>
                         <div className="text-center">
-                            <p>New User ? Please... <Link to="/register" className="text-[#fda40b] underline font-bold">Registration</Link></p>
+                            <p>New user ? please... <Link to="/register" className="text-[#fda40b] underline font-bold">Create an account</Link></p>
                         </div>
                     </form>
+                    <GoogleLogin></GoogleLogin>
+                    <GithubLogin></GithubLogin>
                 </div>
             </div>
         </div>
