@@ -1,5 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
-import toast, { Toaster } from 'react-hot-toast';
+import toast from 'react-hot-toast';
 import { IoIosEyeOff } from "react-icons/io";
 import { IoIosEye } from "react-icons/io";
 import useAuth from "../../hooks/useAuth";
@@ -56,7 +56,7 @@ const Register = () => {
             <div className="hero-content flex-col lg:flex-row-reverse">
                 <div className="text-center lg:text-left">
                     <h1 className="text-3xl md:text-5xl font-bold">Register Here</h1>
-                    <p className="py-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim eaque sunt praesentium ab labore adipisci, laudantium rerum molestias voluptatibus, harum blanditiis quisquam!</p>
+                    <p className="py-6">Register now to unlock exclusive benefits, personalized offers, and seamless access to our platform, creating your account in just a few simple steps.</p>
                 </div>
                 <div className="card shrink-0 w-full max-w-lg shadow-2xl bg-base-100">
                     <form onSubmit={handleRegister} className="card-body">
@@ -113,11 +113,7 @@ const Register = () => {
                             <button className="btn bg-[#fda40b] text-white">Register</button>
                         </div>
                         <div className="text-center">
-                            <p>Already have an account ? Please... <Link to="/login" className="text-[#fda40b] underline font-bold">Login</Link></p>
-                            <Toaster
-                                position="top-center"
-                                reverseOrder={true}
-                            />
+                            <p>Already have an account ? please... <Link to="/login" className="text-[#fda40b] underline font-bold">Login</Link></p>
                         </div>
                     </form>
                 </div>

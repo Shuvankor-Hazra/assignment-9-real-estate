@@ -3,7 +3,7 @@ import useAuth from "../../hooks/useAuth";
 
 const GithubLogin = () => {
 
-    const {githubLogin} =useAuth() ;
+    const { githubLogin } = useAuth();
 
     return (
         <div className="form-control my-6 px-8">

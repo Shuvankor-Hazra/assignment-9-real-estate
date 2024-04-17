@@ -1,6 +1,7 @@
 
 // import PropTypes from 'prop-types';
 
+import { Helmet } from "react-helmet-async";
 import { useLoaderData, useParams } from "react-router-dom";
 
 
@@ -12,10 +13,13 @@ const PropertyDetails = () => {
 
     const targetProperty = allProperty.find((property) => parseInt(property.id) === parseInt(id))
 
-    const [f1,f2,f3] = targetProperty.facilities;
+    const [f1, f2, f3] = targetProperty.facilities;
 
     return (
         <div className="mb-16">
+            <Helmet>
+                <title>{targetProperty.estate_title} | details</title>
+            </Helmet>
             <div>
                 <div className="card lg:card-side bg-base-100 shadow-xl gap-3">
                     <div className="lg:w-1/2 p-3 lg:p-0 rounded-lg">

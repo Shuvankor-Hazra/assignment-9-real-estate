@@ -3,7 +3,7 @@ import useAuth from "../../hooks/useAuth";
 
 const GoogleLogin = () => {
 
-    const  {googleLogin} = useAuth();
+    const { googleLogin } = useAuth();
 
     return (
         <div className="form-control mt-6 px-8">

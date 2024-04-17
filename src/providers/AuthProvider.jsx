@@ -2,6 +2,7 @@ import { createContext, useEffect, useState } from "react";
 import PropTypes from 'prop-types';
 import app from "../firebase/firebase.config";
 import { createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile, GoogleAuthProvider, GithubAuthProvider } from "firebase/auth";
+import toast from "react-hot-toast";
 
 export const AuthContext = createContext(null);
 
@@ -28,6 +29,10 @@ const AuthProvider = ({ children }) => {
             displayName: name,
             photoURL: photoUrl
         })
+        .then(()=> {
+            setUser({...user, displayName:name, photoURL:photoUrl});
+            setLoading(false);
+        })
     }
 
     const signInUser = (email, password) => {
@@ -38,16 +43,24 @@ const AuthProvider = ({ children }) => {
     const googleLogin = () => {
         setLoading(true);
         return signInWithPopup(auth, googleProvider)
+        .then((res)=>{
+            console.log(res);
+            toast.success('Google login successful')
+        })
     }
 
     const githubLogin = () => {
         setLoading(true);
         return signInWithPopup(auth, githubProvider)
+        .then(()=>{
+            toast.success('Github login successful')
+        })
     }
 
     const logOut = () => {
         setLoading(true);
-        return signOut(auth)
+        setUser(null);
+        return signOut(auth);
     }
 
     useEffect(() => {

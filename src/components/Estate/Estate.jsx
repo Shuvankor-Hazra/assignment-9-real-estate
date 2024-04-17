@@ -8,9 +8,9 @@ const Estate = ({ estate }) => {
     const [f1, f2, f3] = estate.facilities;
 
     return (
-        <div>
+        <>
             <div
-                data-aos="zoom-out-down"
+                data-aos="zoom-in-down"
                 data-aos-easing="ease-in-sine"
                 data-aos-offset="300"
                 data-aos-duration="1000"
@@ -36,7 +36,7 @@ const Estate = ({ estate }) => {
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     );
 };
 

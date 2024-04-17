@@ -33,7 +33,7 @@ const Login = () => {
             <div className="hero-content flex-col lg:flex-row-reverse">
                 <div className="text-center lg:text-left">
                     <h1 className="text-3xl md:text-5xl font-bold">Login here!</h1>
-                    <p className="py-6">Lorem ipsum dolor sit amet consectetur adipisicing fuga, iure praesentium repellat tenetur a itaque laudantium rerum molestias voluptatibus, harum blanditiis quisquam!</p>
+                    <p className="py-6">Securely access your account, safeguarding your data while unlocking a world of personalized services, seamless transactions, and tailored experiences.</p>
                 </div>
                 <div className="card shrink-0 w-full max-w-lg shadow-2xl bg-base-100">
                     <form onSubmit={handleLogin} className="card-body pb-0">

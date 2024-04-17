@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Parallax, Autoplay, Navigation, Pagination, Scrollbar, EffectCube } from 'swiper/modules';
+import { Parallax, Autoplay, Navigation, Pagination, Scrollbar } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -12,11 +12,12 @@ import slider3 from '../../assets/3.jpg'
 const SwiperSlider = () => {
     return (
         <Swiper
-            modules={[Parallax, Autoplay, Navigation, Pagination, Scrollbar, EffectCube]}
+            modules={[Parallax, Autoplay, Navigation, Pagination, Scrollbar ]}
+            spaceBetween={50}
             data-swiper-parallax="-23%"
             slot="container-start"
             parallax={true}
-            speed={600}
+            speed={2000}
             loop={true}
             autoplay={{
                 delay: 3000,
@@ -26,16 +27,12 @@ const SwiperSlider = () => {
             pagination={{ clickable: true }}
             scrollbar={{ draggable: true }}
             effect={'cube'}
-            // grabCursor={true}
-            cubeEffect={{
-                shadow: true,
-                slideShadows: true,
-                shadowOffset: 20,
-            }}
+            grabCursor={true}
+            
         >
             <SwiperSlide>
                 <div
-                    className="mx-2 md:mx-0 bg-no-repeat bg-center bg-cover h-dvh rounded-3xl text-white"
+                    className="mx-3 md:mx-0 bg-no-repeat bg-center bg-cover h-dvh rounded-3xl text-white"
                     style={{
                         backgroundImage: `url(${slider1})`,
                         opacity: .8
@@ -45,7 +42,7 @@ const SwiperSlider = () => {
                     >
                         <div className='md:space-y-5 md:w-3/4 leading-7 '>
                             <h2 className='font-extrabold text-2xl md:text-5xl' data-swiper-parallax="-100">Welcome to BricksValley</h2>
-                            <h2 className='font-semibold md:text-xl' data-swiper-parallax="-300">Rising demand fuels industrial real estate growth, driven by logistics innovation and manufacturing expansion.</h2>
+                            <h2 className='font-semibold md:text-xl py-1' data-swiper-parallax="-300">Rising demand fuels industrial real estate growth, driven by logistics innovation and manufacturing expansion.</h2>
                         </div>
                         <div className='space-x-6 '>
                             <button data-swiper-parallax="-500" className='btn btn-sm md:btn-md md:font-semibold bg-white w-fit md:px-12 text-[#fda40b]'>About Us</button>
@@ -66,7 +63,7 @@ const SwiperSlider = () => {
                     >
                         <div className='md:space-y-5 md:w-3/4 leading-7 '>
                             <h2 className='font-extrabold text-2xl md:text-5xl' data-swiper-parallax="-100">Welcome to BricksValley</h2>
-                            <h2 className='font-semibold md:text-xl' data-swiper-parallax="-300">Rising demand fuels industrial real estate growth, driven by logistics innovation and manufacturing expansion.</h2>
+                            <h2 className='font-semibold md:text-xl py-1' data-swiper-parallax="-300">Rising demand fuels industrial real estate growth, driven by logistics innovation and manufacturing expansion.</h2>
                         </div>
                         <div className='space-x-6 '>
                             <button data-swiper-parallax="-500" className='btn btn-sm md:btn-md md:font-semibold bg-white w-fit md:px-12 text-[#fda40b]'>About Us</button>
@@ -87,7 +84,7 @@ const SwiperSlider = () => {
                     >
                         <div className='md:space-y-5 md:w-3/4 leading-7 '>
                             <h2 className='font-extrabold text-2xl md:text-5xl' data-swiper-parallax="-100">Welcome to BricksValley</h2>
-                            <h2 className='font-semibold md:text-xl' data-swiper-parallax="-300">Rising demand fuels industrial real estate growth, driven by logistics innovation and manufacturing expansion.</h2>
+                            <h2 className='font-semibold md:text-xl py-1' data-swiper-parallax="-300">Rising demand fuels industrial real estate growth, driven by logistics innovation and manufacturing expansion.</h2>
                         </div>
                         <div className='space-x-6 '>
                             <button data-swiper-parallax="-500" className='btn btn-sm md:btn-md md:font-semibold bg-white w-fit md:px-12 text-[#fda40b]'>About Us</button>

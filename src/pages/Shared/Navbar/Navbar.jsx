@@ -18,6 +18,7 @@ const Navbar = () => {
         <li className="p-2 rounded-lg "><NavLink to="/">Home</NavLink></li>
         <li className="p-2 rounded-lg "><NavLink to="/about">About</NavLink></li>
         <li className="p-2 rounded-lg "><NavLink to="/updateProfile">Update Profile</NavLink></li>
+        <li className="p-2 rounded-lg "><NavLink to="/contact">Contact Us</NavLink></li>
     </>
 
     return (
@@ -40,16 +41,19 @@ const Navbar = () => {
             </div>
             <div className="navbar-end gap-4">
 
-                <div className="dropdown dropdown-end">
-                    <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar tooltip" data-tip={user?.displayName || 'Name not found'}>
-                        <div className="w-10 md:w-12 rounded-full ">
-                            <img alt="Profile" src={user?.photoURL || userDefaultPic} />
-                        </div>
-                    </div>
-                </div>
+
                 {
                     user ?
-                        <Link onClick={handleSIgnOut} className="btn btn-sm md:btn-md bg-[#fda40b] text-white md:px-10 md:text-lg md:font-bold">Log Out</Link> :
+                        <div className="flex items-center gap-3">
+                            <div className="dropdown dropdown-end">
+                                <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar tooltip" data-tip={user?.displayName || 'Name not found'}>
+                                    <div className="w-10 md:w-12 rounded-full ">
+                                        <img alt="Profile" src={user?.photoURL || userDefaultPic} />
+                                    </div>
+                                </div>
+                            </div>
+                            <Link onClick={handleSIgnOut} className="btn btn-sm md:btn-md bg-[#fda40b] text-white md:px-10 md:text-lg md:font-bold">Log Out</Link>
+                        </div> :
                         <Link to="/login" className="btn btn-sm md:btn-md bg-[#fda40b] text-white md:px-10 md:text-lg md:font-bold">Log In</Link>
                 }
 
